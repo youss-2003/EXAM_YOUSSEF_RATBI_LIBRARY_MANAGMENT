@@ -20,7 +20,7 @@
             <div class="mb-4 text-green-500">{{ session('success') }}</div>
         @endif
 
-        <form action="{{ route('book.store') }}" method="POST">
+        <form action="{{ route('books.store') }}" method="POST">
             @csrf <!-- CSRF protection -->
 
          

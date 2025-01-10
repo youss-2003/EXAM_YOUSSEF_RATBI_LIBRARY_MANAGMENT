@@ -20,8 +20,8 @@
                     </h1>
                     <p class="px-8 mt-8 mb-12 text-lg">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p>
                     <div class="flex flex-wrap justify-center">
-                        <a href="{{route('book.index')}}" class="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">See all books</a>
-                        <a href="{{route('book.store')}}" class="px-8 py-3 m-2 text-lg border rounded dark:text-gray-900 dark:border-gray-300">Create a book</a>
+                        <a href="{{route('books.index')}}" class="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">See all books</a>
+                        <a href="{{route('create')}}" class="px-8 py-3 m-2 text-lg border rounded dark:text-gray-900 dark:border-gray-300">Create a book</a>
                     </div>
                 </div>
             </section>

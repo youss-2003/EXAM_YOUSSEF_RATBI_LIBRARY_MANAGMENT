@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource("book",BookController::class);
+Route::resource("books",BookController::class);
 
 Route::get('/', [BookController::class, 'home'])->name('Book.home');
+Route::get('/create', [BookController::class, 'create'])->name('create');
 
 

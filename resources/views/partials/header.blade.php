@@ -8,7 +8,7 @@
 		</a>
 		<ul class="items-stretch hidden space-x-3 md:flex">
 			<li class="flex">
-				<a rel="noopener noreferrer" href="{{route('book.index')}}" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Create Book</a>
+				<a rel="noopener noreferrer" href="{{route('create')}}" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Create Book</a>
 			</li>
 		</ul>
 		<button class="flex justify-end p-4 md:hidden">

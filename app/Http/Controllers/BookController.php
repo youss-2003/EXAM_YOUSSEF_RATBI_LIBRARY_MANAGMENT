@@ -9,7 +9,7 @@ class BookController extends Controller
 {
     public function store(Request $request){
         $request->validate([
-            'title' => 'required|min:3|unique:books,title', 
+            'title' => 'min:3|unique:books,title', 
             'author' => 'string|max:60',
             'publication_year' => 'integer|min:4|max:4',
             'available_copies' => 'integer|min:1',
@@ -39,5 +39,7 @@ class BookController extends Controller
   public function home(){
     return view('home');
   }
-    
+  public function create(){
+    return view('books.create');
+  }  
 }
