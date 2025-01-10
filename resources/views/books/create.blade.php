@@ -34,7 +34,7 @@
 
             <div class="mb-4">
                 <label for="name" class="block text-gray-700">Author</label>
-                <input type="text" id="name" name="name" value="{{ old('author') }}" class="w-full px-4 py-2 mt-2 border rounded-md" required>
+                <input type="text" maxlength="60" id="name" name="name" value="{{ old('author') }}" class="w-full px-4 py-2 mt-2 border rounded-md" required>
                 @error('author')
                     <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                 @enderror
@@ -42,7 +42,7 @@
 
             <div class="mb-4">
                 <label for="name" class="block text-gray-700">Publication Year</label>
-                <input type="text" id="name" name="name" value="{{ old('publication_year') }}" class="w-full px-4 py-2 mt-2 border rounded-md" required>
+                <input type="number" minlength="4" maxlength="4" id="name" name="name" value="{{ old('publication_year') }}" class="w-full px-4 py-2 mt-2 border rounded-md" required>
                 @error('publication_year')
                     <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                 @enderror
@@ -50,7 +50,7 @@
             
             <div class="mb-4">
                 <label for="name" class="block text-gray-700">Available Copies</label>
-                <input type="text" id="name" name="name" value="{{ old('available_copies') }}" class="w-full px-4 py-2 mt-2 border rounded-md" required>
+                <input type="number" minlength="1" id="name" name="name" value="{{ old('available_copies') }}" class="w-full px-4 py-2 mt-2 border rounded-md" required>
                 @error('available_copies')
                     <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                 @enderror
