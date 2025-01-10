@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Category</title>
+    <title>{{env("APP_NAME","Add Book")}}</title>
 
     
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body class="bg-gray-100">
 
     <div class="max-w-lg mx-auto mt-8 p-6 border rounded-lg shadow-md bg-white">
-        <h2 class="text-2xl font-semibold mb-4 text-center">Add New Category</h2>
+        <h2 class="text-2xl font-semibold mb-4 text-center">Add New BOOk</h2>
 
         <!-- Success message -->
         @if (session('success'))

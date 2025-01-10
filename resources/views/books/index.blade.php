@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{env("APP_NAME")}}</title>
+        <title>{{env("APP_NAME","Show Books")}}</title>
         <script src="https://cdn.tailwindcss.com"></script>
 
         
     </head>
-    <body class="antialiased">
+    <body >
         @include('partials.header')
 
         <body class="bg-gray-100 flex items-center justify-center min-h-screen">

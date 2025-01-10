@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource("book",BookController::class);
 
+Route::get('/', [BookController::class, 'home'])->name('Book.home');
+
 

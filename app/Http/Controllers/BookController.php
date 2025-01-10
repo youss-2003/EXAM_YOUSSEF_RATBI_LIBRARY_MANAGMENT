@@ -35,4 +35,9 @@ class BookController extends Controller
     // Pass the categories to the view
     return view('books.index', compact('books'));
   } 
+
+  public function home(){
+    return view('home');
+  }
+    
 }
